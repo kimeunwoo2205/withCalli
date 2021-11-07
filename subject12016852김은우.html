@@ -4,7 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>환영합니다 은우의 웹세계</title>
+    <title>환영합니다 은우의 휴대폰 케이스</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{width:950px;margin: 0 auto;}
+        li{list-style-type: none;}
+        a{text-decoration: none;}
+        body{background-color:blanchedalmond}
+
+
+    </style>
     <style>
         *{font-family:궁서체,"맑은 고딕",Arial, Helvetica, sans-serif;}
         header h1 {display: inline;}
@@ -21,7 +30,7 @@
             letter-spacing: 5px;
         }
         nav ul li:hover {
-            background-color:blue;
+            background-color:rgb(255, 187, 0);
         }
         nav li a:hover{
             color:white;
@@ -31,16 +40,15 @@
 <body>
     <header>
         <img src="./images/phone.png" alt="logo">
-        <h1>은우의 아이티 세계</h1>
+        <h1>은우의 휴대폰 케이스</h1>
     
         <nav>
             <ul>
-                <li>모바일</li>
-                <li>컴퓨터</li>
-                <li>태블릿</li>
-                <li>프로그래밍 배우기</li>
-                <li>게임기</li>
-                <li>스마트 워치</li>
+                <li><a href="#link">베스트</a></li>
+                <li><a href="#lank">신상케이스</a></li>
+                <li><a href="#아이폰">아이폰</a></li>
+                <li><a href="#삼성">삼성</a></li>
+                <li><a href="#LG">LG</a></li>
             </ul>
         </nav>
     </header>
@@ -54,20 +62,44 @@
     </nav>
     <section>
         <div id="photo">
-            <img src="./images/kimeunwoo.jpg" alt="kimeunwoo">
-            <h2> 좋아하는 오디오</h2>
-            <audio src="./media/music01.mp3" controls></audio>
-            <h2>스포츠를 사랑합니다</h2>
-            <video controls loop src="media/2010년대 대한민국 스포츠 최고의 순간 TOP10!.mp4"></video>
+            <img src="./images/시바견.jfif" alt="시바견">
+            <h2> 101가지의 베스트 상품을 다 모았다!</h2>
+            <img src="./images/101.jpg" controls></img>
+            <div id="link">
+                <a href="베스트상품.html">베스트 상품으로 페이지이동</a><br>
+            <h2>신상 케이스</h2>
+            <img src="images/하트.jfif"controls></img>
+            <div id="lank">
+                <a href="신상품.html">신상품 페이지이동</a><br>
+            <h2> 케이스 만드는 법 공개!!(예시)</h2>
             <hr>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/_Zo_98k0TZs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/x_IkPAeJ0DQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <hr>
+            <h2>랜덤 케이스</h2>
+            <hr>
+            <h2>세상에 꽝은 없다!! 개이득 랜덤박스 </h2>
+            <hr>
+            <video controls loop src="images/랜덤박스,mp4.mp4"></video>
+            <hr>
+            <div id="lank">
+                <a href="랜덤박스.html">랜덤박스 페이지이동</a><br>
+            <hr>
+            <h2>케이스 중고장터 </h2>
+            <img src="images/다운로드.jfif"controls></img>
+            <hr>
+            <div id="lank">
+                <a href="중고장터.html">중고장터 페이지이동</a><br>
+
+           
+
+
             <iframe src="start.html" frameborder="0" width="70%" height>"240px">
               지원되지 않는 브라우저입니다.
             </iframe>
+            
         </div>
         <div id="profile">
-            <h2>Kimeunwoo profile</h2>
+            <h2>판매자 profile</h2>
             <table border="1">
                 <tr>
                     <th>일자</th>
@@ -92,7 +124,7 @@
             </table>
         </div>
         <div id="link">
-            <!--문서간의 이동-->
+            
             <a href="#photo">사진으로 이동</a> <br>
             <a href="http://www.donga.ac.kr">동아대학교</a> <br>
            <a href="http://www.naver.com">네이버</a> <br>
