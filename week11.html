@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학번 이름(event handler)</title>
+    <style>
+        #test {
+            width:200px;
+            height:150px;
+            border:1px solid gray;
+        }
+    </style>
+    <script>
+        function move(e){
+            e.innerHTML = "안녕하세요~~";
+            e.style.backgroundColor = "pink";
+        }
+        function mout(e){
+            e.innerHTML = "동아대학교 경영정보학과";
+            e.style.backgroundColor = "white";
+        }
+        let name='';
+        function init(){
+            name=document.getElementById("fname")
+            name.addEventListener("focus",bgcolor); 
+            name.addEventListener("change",myfunc);
+        }
+        function bgcolor() {
+            name.style.backgroundColor="red";
+        }
+        function myfunc(){
+            name.value = name.value.toUpperCase();
+            name.style.backgroundColor="white";  
+        }
+
+    </script>
+</head>
+<body onload="init();">
+    <p id="demo" onmouseover="this.style.backgroundColor='orange'; this.ineerHTML='안녕하세요';" onmouseout="this.style.backgroundColor='white'; ">
+        9000001, 최동원
+    </p>
+    <div id="test" onmouseover="mover(this);" onmouseout=mout(this);>
+        동아대학교 경영정보학과
+    </div>
+    영문이름을 입력: <input type="text" name="" id="fname">
+</body>
+</html>
+
+
+
